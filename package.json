@@ -1,0 +1,15 @@
+{
+  "name": "ailersic.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for Andrew Francesco Ilersich",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Andrew Francesco Ilersich",
+  "license": "MIT",
+  "homepage": "https://ailersic.github.io",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}
