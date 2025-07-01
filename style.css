@@ -21,6 +21,18 @@ main {
 	margin-right: 4em;
 }
 
+div.container {
+	background-color: rgba(255,255,255,0.6);
+	padding: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+}
+
+nav {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
 li.text-item {
 	margin: 1em 0;
 }
