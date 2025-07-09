@@ -47,24 +47,16 @@
     
     <div class="container">
         <h2 style="text-align: center;">Projects</h2>
-        <p>I have several ongoing academic research projects, some of which grew into (usually PyTorch-based) packages for general use. My few non-academic projects usually take the form of small, self-contained apps that complement my hobbies.</p>
+        <p>I have several ongoing academic research projects as part of my doctoral research, supervised by <a href="https://arrow.utias.utoronto.ca/~pbn/">Prasanth B. Nair</a>. My few non-academic projects usually take the form of small, self-contained apps that complement my hobbies.</p>
 
         <h3>Machine Learning Projects</h3>
         <ul>
             <li class="text-item">
-                <strong>Variational Inference for Stochastic Differential Equations (VISDE)</strong>: A framework for fast variational inference of latent SDE models from time-series data. It supports multiple-trajectory datasets with varying initial conditions, model parameters, and time-dependent forcing functions. It can also be conditioned on physics-informed priors. This is a general training framework, available as a PyTorch Lightning package, that can be applied to a wide variety of model architectures. <a href="https://github.com/ailersic/visde">package</a>
-                <ul>
-                    <li class="text-item">
-                        <strong>Multiscale Modelling with VISDE</strong>: Certain physical systems, such as fluid flow at high Reynolds number, require the state to be resolved across a wide continuum of length and time scales. This approach imposes a scale separation between directly-resolved macroscale features and inferred microscale features and models their dynamics as a coupled pair of SDEs, allowing for efficient inference and prediction. <a href="https://arxiv.org/abs/2506.22655">paper</a> <a href="https://github.com/ailersic/multiscale-visde">code</a> <a href="images/test_multiscale.gif">demo</a>
-                    </li class="text-item">
-                    <li class="text-item">
-                        <strong>Reduced-Order Modelling with VISDE</strong>: Reduced-order models are so named because they reduce the number of degrees of freedom in a dynamical system, often by orders of magnitude, allowing one to obtain faster predictions. Unlike multiscale modelling, this is an old and well-researched class of models. <a href="!#">paper</a> <a href="https://github.com/ailersic/visde">code</a> <a href="images/test_rom.gif">demo</a>
-                    </li class="text-item">
-                </ul>
-            </li>
+                <strong>Multiscale Models</strong>: Certain physical systems, such as fluid flow at high Reynolds number, require the state to be resolved across a wide continuum of length and time scales. This approach imposes a scale separation between directly-resolved macroscale features and inferred microscale features and models their dynamics as a coupled pair of SDEs, allowing for efficient inference and prediction. <a href="https://arxiv.org/abs/2506.22655">paper</a> <a href="https://github.com/ailersic/multiscale-visde">code</a> <a href="images/test_multiscale.gif">demo</a>
+            </li class="text-item">
             <li class="text-item">
-                <strong>Gaussian Continuation</strong>: An optimization technique that injects and decays noise in gradient computation, allowing the optimizer to more easily escape local minima. This method, implemented for PyTorch, is designed for highly non-convex loss functions and works best for low-dimensional parameter spaces. <a href="https://www.aimsciences.org/article/id/6761494fd0b64a5d1d351a65">paper</a> <a href="https://github.com/ailersic/pytorch-gcopt">code</a>
-            </li>
+                <strong>Reduced-Order Models</strong>: Reduced-order models are so named because they reduce the number of degrees of freedom in a dynamical system, often by orders of magnitude, allowing one to obtain faster predictions. Unlike multiscale modelling, this is an old and well-researched class of models. Using the VISDE framework (see below), we are able to learn stochastic, non-intrusive models conditioned on parameters and time-dependent forcing. <a href="!#">paper</a> <a href="https://github.com/ailersic/visde">code</a> <a href="images/test_rom.gif">demo</a>
+            </li class="text-item">
         </ul>
         <h3>Aerospace Projects</h3>
         <ul>
@@ -72,10 +64,19 @@
                 <strong>Microgravity UAV Design</strong>: Design and control of a specialized small airplane capable of simulating a zero-gravity environment. This work led to one paper so far about a design methodology that maximizes zero-gravity time and stability. The eventual goal is to build and fly a prototype. <a href="https://arc.aiaa.org/doi/10.2514/6.2023-3226">design paper</a>
             </li>
         </ul>
+        <h3>Software Libraries</h3>
+        <ul>
+            <li class="text-item">
+                <strong>Variational Inference for Stochastic Differential Equations (VISDE)</strong>: A framework for fast variational inference of latent SDE models from time-series data. It supports multiple-trajectory datasets with varying initial conditions, model parameters, and time-dependent forcing functions. It can also be conditioned on physics-informed priors. This is a general training framework, available as a PyTorch Lightning package, that can be applied to a wide variety of model architectures. <a href="https://github.com/ailersic/visde">package</a>
+            </li>
+            <li class="text-item">
+                <strong>Gaussian Continuation</strong>: An optimization technique that injects and decays noise in gradient computation, allowing the optimizer to more easily escape local minima. This method, implemented for PyTorch, is designed for highly non-convex loss functions and works best for low-dimensional parameter spaces. <a href="https://www.aimsciences.org/article/id/6761494fd0b64a5d1d351a65">paper</a> <a href="https://github.com/ailersic/pytorch-gcopt">code</a>
+            </li>
+        </ul>
         <h3>Non-Academic Projects</h3>
         <ul>
             <li class="text-item">
-                <strong><a href="https://www.ttcmap.ca/">TTCmap.ca</a></strong>: A real-time network status map for Toronto's public transit system.
+                <strong><a href="https://www.ttcmap.ca/">TTCmap.ca</a></strong>: A live network status map for Toronto's public transit system. It provides a visual overview of service disruptions, polled in real-time from the <a href="https://www.ttc.ca/service-alerts">official service alerts</a>.
             </li>
     </div>
     
