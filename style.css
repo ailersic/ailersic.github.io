@@ -136,3 +136,13 @@ i.fa-linkedin-in {
 	margin-left: -1.8rem;
 	color: white;
 }
+
+.github:active span {
+	background-color: #330033;
+}
+.google-scholar:active span {
+	background-color: #1B3461;
+}
+.linkedin:active span {
+	background-color: #053361;
+}
