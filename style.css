@@ -146,3 +146,15 @@ i.fa-linkedin-in {
 .linkedin:active span {
 	background-color: #053361;
 }
+
+.linkbutton {
+	font-size: 0.8rem;
+	border: none;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+}
