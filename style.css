@@ -8,17 +8,16 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
+/* *:active {
+  outline: 4px solid rgba(255,0,0,1);
+}*/
 
-main {
-	margin: 0;
-	position: absolute;
-	top: 25%;
-	-ms-transform: translateY(-25%);
-	transform: translateY(-25%);
-	color: rgb(0,0,0);
+div.main {
 	text-align: left;
-	margin-left: 4em;
-	margin-right: 4em;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	float: left;
 }
 
 div.container {
