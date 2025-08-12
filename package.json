@@ -7,7 +7,6 @@
     "start": "node server.js"
   },
   "author": "Andrew Francesco Ilersich",
-  "license": "MIT",
   "homepage": "https://ailersic.github.io",
   "dependencies": {
     "bootstrap": "^5.3.6"
