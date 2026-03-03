@@ -1,5 +1,6 @@
 html {
 	font-size: 24px;
+  	scroll-behavior: smooth; /* Enables smooth scrolling for all anchor links */
 }
 body {
 	background-image: url('images/background.jpg');
@@ -11,6 +12,19 @@ body {
 /* *:active {
   outline: 4px solid rgba(255,0,0,1);
 }*/
+
+.linkedto {
+    background-color: rgba(255,255,255,0.0);
+}
+
+.linkedto:target {
+    animation: target-fade 2s 1;
+}
+
+@keyframes target-fade {
+    0% { background-color: rgba(150, 150, 255, 0.5); }
+    100% { background-color: rgba(255,255,255,0.0); }
+}
 
 div.main {
 	text-align: left;
